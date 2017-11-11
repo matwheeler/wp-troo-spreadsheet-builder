@@ -4,7 +4,7 @@ namespace TrooSpreadsheetBuilder;
 
 // use TrooSpreadsheetBuilder\Activate;
 use TrooSpreadsheetBuilder\Database\Setup;
-use TrooSpreadsheetBuilder\Controllers\Orders;
+use TrooSpreadsheetBuilder\Controllers\OrdersController;
 
 /**
 * 
@@ -75,7 +75,7 @@ class Plugin
 			'Troo Spreadsheet Builder',
 			'manage_options',
 			$this->name,
-			array(new Orders(), 'display_page')
+			array(new OrdersController(), 'displayPage')
 		);
 	}
 }
